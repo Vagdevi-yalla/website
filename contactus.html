@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health United Private Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <style>
+        @media (max-width: 768px) {
+            /* Adjustments for smaller screens */
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .form input,
+            .form textarea,
+            .form button {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 py-2 flex justify-between items-center bg-green-50">
+            <img src="./public/Logo.png" alt="Health United Image" class="w-16 md:w-24">
+            <button id="mobile-menu-toggle" class="block lg:hidden focus:outline-none">
+                <svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <nav class="hidden lg:flex items-center space-x-6">
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Home</a>
+                <a href="./aboutus.html" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">About</a>
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Solutions</a>
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Platforms</a>
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 py-10 bg-gray-200">
+        <p class="text-lg md:text-xl lg:text-6xl text-gray-900 font-bold  dark:text-gray-300 mt-8 text-center">
+            Contact Us
+        </p>
+        <p class="text-lg md:text-xl lg:text-4xl text-gray-700 dark:text-gray-300 mt-4 text-center">
+            For any queries, please fill the form <br> below
+        </p>
+
+    </div>
+
+    <div class="contactus bg-green-100 py-10 px-6 md:py-16 md:px-8 lg:px-12">
+        <p class="text-lg md:text-xl lg:text-5xl font-semibold text-gray-900 dark:text-gray-200 mb-6 md:mb-8 text-center">Send Us a Message</p>
+
+        <div class="form max-w-lg mx-auto">
+            <form action="contactus.php" method="post" class="text-center">
+                <input type="text" name="name" id="name" placeholder="Your Name" class="w-full mb-4 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                <input type="email" name="email" id="email" placeholder="Your Email" class="w-full mb-4 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                <input type="text" name="subject" id="subject" placeholder="Subject" class="w-full mb-4 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                <textarea name="message" id="message" placeholder="Wanna ask something?" class="w-full h-32 mb-4 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                <button type="submit" name="submit" class="w-full bg-green-500 text-white py-3 px-6 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="flex" id="contact">
+        <div class="container ml-auto mr-auto md:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img id="img-last" src="./public/Logo.png" alt="Health United Private Limited Logo"
+                        class="w-24 md:w-32 lg:w-40 mx-auto">
+                    <p class="mt-4 text-lg text-gray-800 dark:text-white">It is a long established fact that a reader
+                        <br>will be distracted.</p>
+                </div>
+            </div>
+            <br><br>
+            <hr>
+            <div>
+                &copy; &nbsp;&nbsp;Health United 2024, All Rights Reserved
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>

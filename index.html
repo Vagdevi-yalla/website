@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health United Private Limited</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <style>
+        @media (max-width: 768px) {
+            /* Adjustments for smaller screens */
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+ /* Additional styles for responsiveness */
+ @media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar img {
+        margin-bottom: 1rem;
+    }
+
+    .navbar nav {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .navbar nav a {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+        @media (max-width: 640px) {
+            /* Adjustments for even smaller screens */
+            .navbar {
+                padding: 1rem 0;
+            }
+
+            .problem-areas {
+                padding-top: 4rem;
+            }
+
+            .solutions {
+                padding-top: 4rem;
+            }
+
+            .platforms {
+                padding-top: 4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 py-2 flex justify-between items-center bg-green-50">
+            <img src="./public/Logo.png" alt="Health United Image" class="w-16 md:w-24">
+            <button type="button" id="mobile-menu-toggle" class="block lg:hidden focus:outline-none">
+                <svg class="h-6 w-6 text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <nav class="hidden lg:flex items-center space-x-6">
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Home</a>
+                <a href="./aboutus.html" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">About</a>
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Solutions</a>
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Platforms</a>
+                <a href="#" class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 py-10">
+        <p class="text-lg md:text-xl lg:text-4xl text-gray-900 font-bold  dark:text-gray-300 mt-8 text-center">
+            Healthcare Through Innovation and Integration
+        </p>
+        <p class="text-lg md:text-xl lg:text-1xl text-gray-600 dark:text-gray-300 mt-4 text-center">
+            Bridging the Gap Between Patients and Doctors
+        </p>
+        <div class="text-center pt-6">
+            <button type="button"
+                class="focus:outline-none text-black bg-green-700 hover:bg-green-800 focus:ring-4 focus:green-600 font-medium rounded-lg text-xs md:text-sm lg:text-base px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 h-auto dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 mx-auto">
+                Learn More
+            </button>
+        </div>
+    </div>
+
+    <div class="bg-gray-100" id="about">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 py-20">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-800 dark:text-white">
+                About Us
+            </h1>
+            <p class="pt-10 text-lg md:text-xl lg:text-2xl text-center text-gray-800 dark:text-white">
+                Revolutionizing Healthcare through <br> Research.... <a href="#" class="text-blue-500">Learn More</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="chatbot">
+        <a href="./chatHome.html"><img src="./public/Frame 89.png" alt="chatbot"></a>
+    </div>
+
+    <div class="problem-areas" id="problem-areas">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-800 dark:text-white mt-20">
+            Problem Areas
+        </h1>
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Left Side -->
+            <div>
+                <div class="text-center">
+                    <p class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white">Problem 1</p>
+                    <p class="text-lg md:text-xl lg:text-1xl text-gray-800 dark:text-white">Diagnostic errors hinder care.
+                        Health United <br> integrates evidence and practitioner insights <br> to enhance accuracy.</p>
+                </div>
+                <br><br><br>
+
+                <div class="text-center">
+                    <p class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white">Problem 2</p>
+                    <p class="text-lg md:text-xl lg:text-1xl text-gray-800 dark:text-white">Quality care needs effective
+                        feedback. <br> Health United focuses on enhancing care <br> quality and patient satisfaction
+                        through a <br>feedback-rich approach.</p>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div>
+                <div class="text-center">
+                    <p class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white">Problem 3</p>
+                    <p class="text-lg md:text-xl lg:text-1xl text-gray-800 dark:text-white">Errors jeopardize safety.
+                        Health United <br> integrates evidence and practitioner insights <br> to reduce errors and improve
+                        care.</p>
+                </div>
+                <br><br><br>
+                <div class="text-center">
+                    <p class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white">Problem 4</p>
+                    <p class="text-lg md:text-xl lg:text-1xl text-gray-800 dark:text-white">Disruptions impact outcomes.
+                        Health United <br> aims for seamless care transitions, ensuring <br>consistent and effective
+                        healthcare <br>
+                        delivery.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="solutions" id="solutions">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-800 dark:text-white">
+                Our Primary Focus
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                <div class="text-center">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+                        <img class="w-full" src="./public/card2.png" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Evidence based Care</div>
+                            <p class="text-gray-700 text-base">Elevate healthcare with evidence and insights for
+                                precision.</p>
+                        </div>
+                        <div class="px-6 py-4 flex justify-end">
+                            <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+                        <img class="w-full" src="./public/card1.png" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Bridging Patients and Doctors</div>
+                            <p class="text-gray-700 text-base">Connect patients and providers for unparalleled medical
+                                care.</p>
+                        </div>
+                        <div class="px-6 py-4 flex justify-end">
+                            <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center">
+
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+                        <img class="w-full" src="./public/card1.png" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Real-Time Consultation Feedback</div>
+                            <p class="text-gray-700 text-base">Foster patient-centric care through real-time
+                                feedback.</p>
+                        </div>
+                        <div class="px-6 py-1 flex justify-end">
+                            <a href=""><button
+                                    class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                                    Learn More
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg mt-10">
+                        <img class="w-full" src="./public/card3.png" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Personalized treatment</div>
+                            <p class="text-gray-700 text-base">Tailor treatment plans for effective outcomes.</p>
+                        </div>
+                        <div class="px-6 py-4 flex justify-end">
+                            <button class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br>
+    <div class="platforms" id="platforms">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 py-20">
+            <h1 class="text-5xl md:text-5xl lg:text-6xl font-bold  text-white dark:text-white pl-9">
+                Join Us in Enhancing <br> Healthcare
+            </h1><br>
+            <div class="px-6 py-4 flex ml-6">
+                <button type="button"
+                    class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:green-600 font-medium rounded-lg text-sm md:text-base lg:text-lg px-5 py-2.5 md:px-8 md:py-3 lg:px-10 lg:py-4 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex" id="contact">
+        <div class="container ml-auto mr-auto md:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img id="img-last" src="./public/Logo.png" alt="Health United Private Limited Logo"
+                        class="w-24 md:w-32 lg:w-40 mx-auto">
+                    <p class="mt-4 text-lg text-gray-800 dark:text-white">It is a long established fact that a reader
+                        <br>will be distracted.</p>
+
+                </div>
+
+            </div>
+            <br><br>
+            <hr>
+            <div>
+                &copy; &nbsp;&nbsp;Health United 2024, All Rights Reserved
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
