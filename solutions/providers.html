@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health United Private Limited</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      @media (max-width: 768px) {
+        /* Adjustments for smaller screens */
+        .container {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+      /* Additional styles for responsiveness */
+      @media (max-width: 768px) {
+        /* Adjustments for smaller screens */
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .navbar img {
+          margin-bottom: 1rem;
+        }
+
+        .navbar nav {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .navbar nav a {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+      }
+      @media (max-width: 640px) {
+        /* Adjustments for even smaller screens */
+        .navbar {
+          padding: 1rem 0;
+        }
+
+        .problem-areas {
+          padding-top: 4rem;
+        }
+
+        .solutions {
+          padding-top: 4rem;
+        }
+
+        .platforms {
+          padding-top: 4rem;
+        }
+      }
+      #platforms {
+        background-image: url("../public/bg-learn.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+      }
+      #contact {
+        height: 50vh;
+        background: #a7d3a1;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+      }
+      hr {
+        border-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar" id="navbar">
+      <div
+        class="container mx-auto px-4 md:px-6 lg:px-8 py-2 flex justify-between items-center bg-green-50"
+      >
+        <img
+          src="../public/Logo.png"
+          alt="Health United Image"
+          class="w-16 md:w-24"
+        />
+        <button
+          type="button"
+          id="mobile-menu-toggle"
+          class="block lg:hidden focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6 text-gray-800"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <nav class="hidden lg:flex items-center space-x-6">
+          <a
+            href="#"
+            class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
+            >Home</a
+          >
+          <a
+            href="./aboutus.html"
+            class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
+            >Solutions</a
+          >
+          <a
+            href="#"
+            class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
+            >Platforms</a
+          >
+          <a
+            href="./contactus.html"
+            class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 py-10">
+      <p
+        class="text-lg md:text-xl lg:text-4xl text-gray-900 font-bold dark:text-gray-300 mt-8 text-center"
+      >
+        Partnering for Exceptional Patient Care
+      </p>
+      <p
+        class="text-lg md:text-xl lg:text-1xl text-gray-600 dark:text-gray-300 mt-4 text-center"
+      >
+        Bridging the Gap Between Patients and Doctors
+      </p>
+      <div class="text-center pt-6">
+        <button
+          type="button"
+          class="focus:outline-none text-black bg-green-700 hover:bg-green-800 focus:ring-4 focus:green-600 font-medium rounded-lg text-xs md:text-sm lg:text-base px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 h-auto dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 mx-auto"
+        >
+          Explore
+        </button>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    <div>
+      <p
+        class="text-lg md:text-xl lg:text-4xl text-gray-900 font-bold dark:text-gray-300 mt-8 text-center"
+      >
+        Featured Healthcare Providers
+      </p>
+      <img class="w-70 h-65 mx-20 my-20" src="../public/Group 5.png" />
+      <p
+        class="text-lg md:text-xl lg:text-4xl text-gray-900 font-bold dark:text-gray-300 mt-8 text-center"
+      >
+        Benefits of Partnering with Health United
+      </p>
+      <div class="grid grid-cols-2 gap-2 m-20 items-center">
+        <div class="flex flex-col justify-center">
+          <img src="../public/Frame 4709.png" class="w-60 h-60" />
+        </div>
+        <div class="flex flex-col justify-center text-center md:text-right">
+          <h1
+            class="text-2xl md:text-3xl lg:text-2xl font-bold text-gray-800 dark:text-white"
+          >
+            Improved Patient Communication
+          </h1>
+          <p
+            class="text-lg md:text-xl lg:text-1xl text-gray-600 dark:text-gray-300 mt-4"
+          >
+            Collaborate with us to improve patient communication, fostering a
+            stronger connection between healthcare providers and their patients.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center text-center md:text-left">
+          <h1
+            class="text-2xl md:text-3xl lg:text-2xl font-bold text-gray-800 dark:text-white"
+          >
+            Enhanced Diagnostic Capabilities
+          </h1>
+          <p
+            class="text-lg md:text-xl lg:text-1xl text-gray-600 dark:text-gray-300 mt-4"
+          >
+            Access advanced diagnostic capabilities through our partnership,
+            contributing to more accurate and timely diagnoses.
+          </p>
+        </div>
+        <div class="flex flex-col items-end">
+          <img src="../public/Frame 4708.png" class="w-60 h-60" />
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    <div class="platforms" id="platforms">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8 py-20">
+        <h1
+          class="text-5xl md:text-5xl lg:text-6xl font-bold text-white dark:text-white pl-9"
+        >
+          Join Us in Enhancing <br />
+          Healthcare
+        </h1>
+        <br />
+
+        <div class="px-6 py-4 flex ml-6">
+          <button
+            type="button"
+            class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:green-600 font-medium rounded-lg text-sm md:text-base lg:text-lg px-5 py-2.5 md:px-8 md:py-3 lg:px-10 lg:py-4 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex" id="contact">
+      <div class="container ml-auto mr-auto md:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <img
+              id="img-last"
+              src="../public/Logo.png"
+              alt="Health United Private Limited Logo"
+              class="w-24 md:w-32 lg:w-40 mx-auto"
+            />
+            <p class="mt-4 text-lg text-gray-800 dark:text-white">
+              It is a long established fact that a reader <br />will be
+              distracted.
+            </p>
+          </div>
+        </div>
+        <br /><br />
+        <hr />
+        <div>&copy; &nbsp;&nbsp;Health United 2024, All Rights Reserved</div>
+      </div>
+    </div>
+    <div></div>
+  </body>
+</html>
