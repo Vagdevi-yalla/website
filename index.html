@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="dropDown.css" />
+
     <style>
       @media (max-width: 768px) {
         /* Adjustments for smaller screens */
@@ -61,7 +63,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="bg-gray-200 font-sans">
     <div class="navbar" id="navbar">
       <div
         class="container mx-auto px-4 md:px-6 lg:px-8 py-2 flex justify-between items-center bg-green-50"
@@ -100,11 +102,57 @@
             class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
             >About</a
           >
-          <a
-            href="#"
-            class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
-            >Solutions</a
-          >
+          <li class="relative">
+            <div class="dropdown">
+              <a
+                href="#"
+                class="dropbtn hover:text-green-700 px-4 py-2 transition-colors duration-300 text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"
+                >Solutions</a
+              >
+              <div class="dropdown-content">
+                <a href="#" class="flex justify-between items-center py-2 px-4">
+                  <img
+                    src="./public/provider.svg"
+                    class="w-6 h-6"
+                    alt="Provider"
+                  />
+                  <span>Provider</span>
+                </a>
+                <a href="#" class="flex justify-between items-center py-2 px-4">
+                  <img
+                    src="./public/lab-icon.svg"
+                    class="w-6 h-6"
+                    alt="Lab Diagnostic Partners"
+                  />
+                  <span>Lab Diagnostic Partners</span>
+                </a>
+                <a href="#" class="flex justify-between items-center py-2 px-4">
+                  <img
+                    src="./public/drugs-icon.svg"
+                    class="w-6 h-6"
+                    alt="Drugs"
+                  />
+                  <span>Drugs</span>
+                </a>
+                <a href="#" class="flex justify-between items-center py-2 px-4">
+                  <img
+                    src="./public/health_insurance.svg"
+                    class="w-6 h-6"
+                    alt="Health Insurance"
+                  />
+                  <span>Health Insurance</span>
+                </a>
+                <a href="#" class="flex justify-between items-center py-2 px-4">
+                  <img
+                    src="./public/Patient-icon.svg"
+                    class="w-6 h-6"
+                    alt="Patients"
+                  />
+                  <span>Patients</span>
+                </a>
+              </div>
+            </div>
+          </li>
           <a
             href="#"
             class="text-gray-800 text-base md:text-lg font-semibold hover:text-blue-500"

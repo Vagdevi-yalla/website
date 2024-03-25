@@ -1,0 +1,66 @@
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 300px; /* Adjust the width as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+  border-radius: 5px;
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  white-space: nowrap;
+  position: relative;
+}
+.navbar nav li {
+  list-style: none;
+}
+
+/* Align the "Platforms" and "Contact" links to the right */
+.navbar nav li:last-child {
+  margin-left: auto;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0; /* Hover background color */
+  color: #2c6e40; /* Hover text color */
+}
+
+.dropdown-content a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Line between dropdown items */
+.dropdown-content a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: calc(100% - 40px);
+  border-bottom: 1px solid grey;
+}
+
+/* Arrow */
+.dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 10%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
